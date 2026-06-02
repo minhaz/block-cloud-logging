@@ -1,4 +1,7 @@
 # Google Cloud Logging - Log Analytics Block
+
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 Google Cloud Logging’s [Log Analytics](https://cloud.google.com/blog/products/devops-sre/introducing-cloud-loggings-log-analytics-powered-by-big-query) feature centralizes all of your log data (application, audit and network) into a single view within BigQuery. This block allows you to instantly aggregate, visualize, and alert on all of your log data using pre-built dashboards and LookML data models. You can also extend and customize the block to include other datasets and define new logic that is unique to your business.
 
 ### Log Types Covered
@@ -6,15 +9,12 @@ Google Cloud Logging’s [Log Analytics](https://cloud.google.com/blog/products/
 - **Application Logs** &nbsp;(*coming soon*)
 - **Network Logs** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (*coming soon*)
 
-
-
 ### Included Dashboards
 **Cloud Audit Logs**
 1. **Audit Pulse**
 2. **Data Access Logs**
 3. **Unusual API Usage**
 4. **Principal Lookup**
-
 
 ## Getting Started
 ### Prerequisites
@@ -24,7 +24,6 @@ There is also an older method of moving logs into BigQuery by creating sinks. Th
 
 ### Installing the Block
 The block is not yet available on the [Looker Marketplace](https://marketplace.looker.com/), but will be soon. In the meantime, you can clone this git repo when [creating a new Looker project](https://cloud.google.com/looker/docs/create-projects#cloning_a_public_git_repository).
-
 
 ### Adding IP-to-Geography mapping data to BigQuery
 A very easy and powerful way to enrich the GCP log data is by including IP Address-to-Geography mapping data, which enables you to visualize the general geographical area related to an IP address. In the block, we have used a [free license from Maxmind](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en) (they also have a paid version), but you are welcome to use your own sources as well.
@@ -38,7 +37,6 @@ To add this data to your BigQuery database, you can follow these steps.
 | ----- | ----- |
 | GeoLite2-City-Blocks-IPv4.csv | ipv4_city_blocks |
 | GeoLite2-City-Locations-en.csv | ipv4_city_locations |
-
 
 ## Customizing the Block
 
